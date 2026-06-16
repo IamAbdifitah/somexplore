@@ -73,7 +73,7 @@ const Home = () => {
             <section className="relative h-[80vh] flex flex-col items-center justify-center text-center overflow-hidden rounded-[3rem] mb-20 shadow-2xl">
                 <div className="absolute inset-0">
                     <img
-                        src="/src/assets/images/mogadishu.png"
+                        src="/images/mogadishu.png"
                         alt="Somalia Hero"
                         className="w-full h-full object-cover opacity-60 scale-105"
                     />
