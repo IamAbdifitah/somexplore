@@ -5,7 +5,7 @@
     "capital": "Borama",
     "description": "A historic region in the northwest, known for the ancient port of Zeila and the Guban zone.",
     "population": "655,894",
-    "image": "/src/assets/images/Awdal.jpg",
+    "image": "/images/Awdal.jpg",
     "details": {
       "history": "Awdal has a deep historical heritage as part of the ancient Land of Punt and the Adal Sultanate. Its coastal strip lies in the Guban zone, a dry and hot plain. Zeila (Saylac) was a major trade hub in the Horn of Africa, serving as a gateway for Islam and commerce for centuries.",
       "attractions": [
@@ -37,7 +37,7 @@
     "capital": "Xudur",
     "description": "Located in the south-west, a region characterized by its nomadic culture in the Dooy zone.",
     "population": "560,267",
-    "image": "/src/assets/images/Bakool.jpg",
+    "image": "/images/Bakool.jpg",
     "details": {
       "history": "Bakool is situated in the semi-arid Dooy zone of southern Somalia. Historically, Xudur and the surrounding areas were central to the resistance against European colonization and played a key role in nomadic pastoralism and livestock trading routes.",
       "attractions": [
@@ -68,7 +68,7 @@
     "capital": "Mogadishu",
     "description": "The administrative, cultural, and historic heart of Somalia, home to the capital Mogadishu.",
     "population": "3,262,129",
-    "image": "/src/assets/images/banaadir.jpg",
+    "image": "/images/banaadir.jpg",
     "details": {
       "history": "Banaadir is the smallest yet most populous region, representing the capital Mogadishu. Known historically as the 'White Pearl of the Indian Ocean', it has been a major trade center for over a thousand years, exchanging gold, ivory, and spices with Persia, India, and Arabia.",
       "attractions": [
@@ -100,7 +100,7 @@
     "capital": "Bosaso",
     "description": "Somalia's largest region by area, featuring the mountainous Goolis zone and the port of Bosaso.",
     "population": "1,270,552",
-    "image": "/src/assets/images/bari.jpeg",
+    "image": "/images/bari.jpeg",
     "details": {
       "history": "Bari is located in the northeastern corner of Somalia. It features the rugged Goolis mountain range, which is famous for producing high-quality frankincense. The region has a long maritime history, with ancient trading ports linking the Horn of Africa to Egypt and the Mediterranean.",
       "attractions": [
@@ -132,7 +132,7 @@
     "capital": "Baidoa",
     "description": "A highly productive agricultural region in the south, located in the fertile Dooy zone.",
     "population": "1,286,787",
-    "image": "/src/assets/images/Baay.jpg",
+    "image": "/images/Baay.jpg",
     "details": {
       "history": "Bay is situated in the fertile Dooy zone, between the Jubba and Shabeelle rivers. Known as the breadbasket of southern Somalia, it has a rich farming tradition specializing in sorghum, maize, and beans. The capital, Baidoa, has historically been a major trade and political hub.",
       "attractions": [
@@ -164,7 +164,7 @@
     "capital": "Dhuusamareeb",
     "description": "A central region characterized by red sandy soils of the Howd zone and nomadic poetry.",
     "population": "837,916",
-    "image": "/src/assets/images/galgadud.jpg",
+    "image": "/images/galgadud.jpg",
     "details": {
       "history": "Galguduud lies in the central Howd zone of Somalia, characterized by its red soils and vast grasslands. It is the heartland of Somali pastoralism, where nomadic families have bred camels for generations. The region has produced many of the nation's most famous poets and oral historians.",
       "attractions": [
@@ -195,7 +195,7 @@
     "capital": "Garbahaarey",
     "description": "A hilly southern region bordering Kenya and Ethiopia, crossed by the Jubba River.",
     "population": "508,405",
-    "image": "/src/assets/images/Gedojpg.jpg",
+    "image": "/images/Gedojpg.jpg",
     "details": {
       "history": "Gedo is a scenic region in southwestern Somalia, featuring hills, rivers, and fertile valleys. It is crossed by the Jubba River, which supports extensive riverine farming. Gedo has historically been a critical boundary zone and was the site of several anti-colonial resistance battles.",
       "history_so": "[Somali translation of history]",
@@ -228,7 +228,7 @@
     "capital": "Beledweyne",
     "description": "A central riverine region linking southern and central Somalia along the Shabeelle River.",
     "population": "520,517",
-    "image": "/src/assets/images/hiiran.jpg",
+    "image": "/images/hiiran.jpg",
     "details": {
       "history": "Hiiraan is a central region bisected by the Shabeelle River. Beledweyne, the capital, sits on a strategic trade crossroads. The region has a history of agricultural prosperity and has historically served as a critical hub connecting the northern, central, and southern parts of the country.",
       "attractions": [
@@ -259,7 +259,7 @@
     "capital": "Bu'aale",
     "description": "The most forested region of Somalia, rich in riverine agriculture in the Dhoobey zone.",
     "population": "870,200",
-    "image": "/src/assets/images/buaale.jpeg",
+    "image": "/images/buaale.jpeg",
     "details": {
       "history": "Jubbada Dhexe (Middle Jubba) lies in the Dhoobey zone, characterized by fertile alluvial soils. It is the most densely forested region in Somalia and is heavily irrigated by the Jubba River. It was historically a key supplier of agricultural goods and cotton during the pre-colonial era.",
       "attractions": [
@@ -290,7 +290,7 @@
     "capital": "Kismaayo",
     "description": "A strategic southern region featuring national parks, the Bajuni islands, and Kismaayo Port.",
     "population": "489,307",
-    "image": "/src/assets/images/jubadadhexe.jpg",
+    "image": "/images/jubadadhexe.jpg",
     "details": {
       "history": "Jubbada Hoose (Lower Jubba) is a highly diverse region with a long coastline on the Indian Ocean. It was historically ruled by the Ajuuraan Sultanate and later the Geledi Sultanate. The port of Kismaayo was a critical node in East African trade, exporting agricultural crops and hides.",
       "attractions": [
@@ -322,7 +322,7 @@
     "capital": "Galkacyo",
     "description": "A central region spanning the Howd zone to the Indian Ocean, famous for livestock trade.",
     "population": "1,516,035",
-    "image": "/src/assets/images/mudug.jpeg",
+    "image": "/images/mudug.jpeg",
     "details": {
       "history": "Mudug is a historically significant region in central Somalia. It spans from the dry Howd grasslands in the west to the Indian Ocean in the east. The region is famous for Galkacyo, a major commercial city that historically connected northern trade routes with southern markets.",
       "attractions": [
@@ -353,7 +353,7 @@
     "capital": "Garowe",
     "description": "A central valley region known for Garowe, the administrative capital of Puntland.",
     "population": "651,464",
-    "image": "/src/assets/images/nugaal.jpeg",
+    "image": "/images/nugaal.jpeg",
     "details": {
       "history": "Nugaal is named after the Nugaal Valley, a large dry river valley that runs through the region. It is characterized by gypsum and limestone formations. The capital, Garowe, is a peaceful administrative center that has grown rapidly since the establishment of Puntland in 1998.",
       "attractions": [
@@ -384,7 +384,7 @@
     "capital": "Ceerigaabo",
     "description": "A mountainous northern region featuring Somalia's highest peaks and frankincense forests.",
     "population": "544,123",
-    "image": "/src/assets/images/Sanaag.jpg",
+    "image": "/images/Sanaag.jpg",
     "details": {
       "history": "Sanaag is a geographic wonderland, boasting the Cal Madow mountain range and Surad Peak (the highest point in Somalia at nearly 8,000 feet). Sanaag has been a center for frankincense harvesting for thousands of years and contains ancient ruins predating the Islamic era.",
       "attractions": [
@@ -416,7 +416,7 @@
     "capital": "Jowhar",
     "description": "A fertile southern agricultural region irrigated by the Shabeelle River.",
     "population": "1,044,872",
-    "image": "/src/assets/images/jowhar.jpeg",
+    "image": "/images/jowhar.jpeg",
     "details": {
       "history": "Shabeellaha Dhexe (Middle Shabeelle) is a highly fertile agricultural region. Jowhar, the capital, was once the capital of the historic Geledi Sultanate and later a center for Italian agricultural projects. The region is famous for producing rice, sugarcane, and bananas.",
       "attractions": [
@@ -447,7 +447,7 @@
     "capital": "Marka",
     "description": "Somalia's agricultural breadbasket, featuring ancient coastal towns like Marka.",
     "population": "1,642,667",
-    "image": "/src/assets/images/mogadishu.png",
+    "image": "/images/mogadishu.png",
     "details": {
       "history": "Shabeellaha Hoose (Lower Shabeelle) is the agricultural powerhouse of Somalia. It has a rich history of resistance against colonization, notably the Biyamaal revolt against Italian rule. Marka, the capital, is an ancient port city with distinct coral-stone architecture.",
       "attractions": [
@@ -479,7 +479,7 @@
     "capital": "Laascaanood",
     "description": "An inland region in the north, historically the heart of the Darwiish anti-colonial movement.",
     "population": "327,428",
-    "image": "/src/assets/images/sool.jpeg",
+    "image": "/images/sool.jpeg",
     "details": {
       "history": "Sool is a dry valley region located in northern Somalia. It is historically famous as the main base of the Darwiish movement led by Sayyid Mohamed Abdulle Hassan, who built major stone forts in Taleex. The region is known for its strong pastoralist tradition.",
       "attractions": [
@@ -510,7 +510,7 @@
     "capital": "Burco",
     "description": "A northern region named after its dry riverbed, a major center for livestock trade.",
     "population": "887,450",
-    "image": "/src/assets/images/burco.jpeg",
+    "image": "/images/burco.jpeg",
     "details": {
       "history": "Togdheer is named after the Togdheer River, a seasonal dry riverbed that runs through the region. The capital, Burco, is the second-largest city in Somaliland and is a massive marketplace for livestock trade, exporting millions of sheep and goats to the Gulf countries annually.",
       "attractions": [
@@ -541,7 +541,7 @@
     "capital": "Hargeisa",
     "description": "A prominent northern region featuring the capital Hargeisa and ancient Laas Geel rock art.",
     "population": "1,492,506",
-    "image": "/src/assets/images/hargeisa.jpeg",
+    "image": "/images/hargeisa.jpeg",
     "details": {
       "history": "Woqooyi Galbeed (North West) is a high-altitude region in the north. It is home to Hargeisa, a bustling commercial and cultural capital. The region contains Laas Geel, featuring some of the oldest and best-preserved Neolithic rock art in the entire African continent, dating back over 5,000 years.",
       "attractions": [
