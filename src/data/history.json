@@ -1,0 +1,110 @@
+[
+  {
+    "year": "3500 BC - 610 AD",
+    "event_en": "Land of Punt & Ancient Trade (Dhulkii Boonti)",
+    "event_so": "Dhulkii Boonti & Ganacsigii Qadiimiga Ahaa",
+    "category": "Ancient",
+    "image": "/src/assets/images/laasgeel.png",
+    "description_en": "Described by ancient Egyptians as the 'Land of God' or 'Land of Punt', the Somali coast was a legendary trading partner that exported gold, aromatic resins, ebony, ivory, and wild animals. Coastal trading ports like Afaaliitis (Saylac), Mallaaw (Berbera), Mindis (Xiis), and Mosooliyoom (Bosaso) formed a robust commercial network linking the Horn of Africa to the great ancient civilizations of the Nile, Mesopotamia, and India. The historical record shows that the Somali ancestors were highly skilled traders and seafarers who established a respected maritime network long before the modern era.",
+    "description_so": "Naanaysta ay Masar tii hore u bixisay oo ahayd 'Dhulkii Ilaahyada' ama 'Dhulkii Boonti', xeebaha Soomaalidu waxay ahaayeen marinka ganacsiga ee dahabka, beeyada, udugga, fool-maroodiga, iyo xayawaanka duurjoogta ah. Dekadaha caanka ah sida Afaaliitis (Saylac) iyo Mallaaw (Berbera) waxay isku xiri jireen Geeska Afrika iyo ilbaxnimooyinkii waaweynaa ee adduunka. Taariikhdu waxay muujinaysaa in awowyaashii Soomaalidu ahaayeen ganacsato iyo badmaaxiin xirfad sare leh oo dhisay shabakad ganacsi muddo dheer ka hor xilligan casriga ah."
+  },
+  {
+    "year": "615 AD",
+    "event_en": "Peaceful Spread of Islam & Saylac",
+    "event_so": "Faafitaankii Nabadgalyada ee Islaamka & Saylac",
+    "category": "Medieval",
+    "image": "/src/assets/images/mogadishu.png",
+    "description_en": "Islam reached the Horn of Africa during the lifetime of Prophet Muhammad (peace be upon him) in the 5th year of the Prophethood (circa 615 AD). The first Muslim migration (Hijrah) to Abyssinia crossed the Red Sea via the Bab-el-Mandeb strait and landed at the historic port of Saylac. From there, Islam spread peacefully throughout the Somali peninsula through peaceful da'wah (preaching) and merchant trade without any military conquests, quickly integrating into the social fabric and forming the bedrock of Somali identity.",
+    "description_so": "Islaamku wuxuu Geeska Afrika soo gaaray xilligii uu noolaa Nebi Muxammad (N.N.K.H) sanadkii 5aad ee soo bixitaanka Islaamka. Hijradii ugu horreysay ee asxaabta ee ku wajahnayd Xabashida waxay ka soo gudubtay marinka Bab-el-Mandeb waxayna ka soo degtay dekedda Saylac, halkaas oo Islaamku uga faafay gabi ahaanba geyiga Soomaaliyeed asagoo ku faafay dacwo nabadgalyo ah iyo ganacsi oo aan jirin wax duullaan ciidan ah, asagoo si degdeg ah u noqday saldhigga aqoonsiga Soomaalinimo."
+  },
+  {
+    "year": "13th - 17th Century",
+    "event_en": "Golden Age of the Ajuran Empire (Ajuuraan)",
+    "event_so": "Xilligii Dahabiga ahaa ee Saldanaddii Ajuuraan",
+    "category": "Medieval",
+    "image": "/src/assets/images/culture.png",
+    "description_en": "The Ajuran Sultanate was a powerful, highly centralized Somali state that dominated southern Somalia. Headquartered at various regional centers, it established an impressive centralized tax system, structured military, and highly sophisticated water engineering projects, including the famous deep limestone wells (ceelashii Ajuuraanka) still used today. The empire promoted extensive agricultural production along the Jubba and Shabeelle rivers and successfully defended the Somali coast against Portuguese colonial fleets in fierce battles at ports like Baraawe.",
+    "description_so": "Saldanadda Ajuuraan waxay ahayd maamul Soomaaliyeed oo awood iyo nidaam dhexe oo adag ku xukumay koonfurta Soomaaliya. Waxaa lagu xusuustaa nidaamka cashuuraha ee habaysan, ciidanka gaarka ah, iyo ceelal biyoodyadii qadiimiga ahaa ee dhoobada laga qoday (Ceelashii Ajuuraanka) ee ilaa maanta la isticmaalo. Boqortooyadu waxay horumarisay beeraha hareeraha wabiyada Jubba iyo Shabeelle, waxayna si geesiyad leh u jabiyeen duullaankii Boortaqiiska ee xeebaha Baraawe."
+  },
+  {
+    "year": "1521 - 1543",
+    "event_en": "Sultanate of Adal & Imam Ahmed Gurey",
+    "event_so": "Saldanaddii Cadal & Al-Imaam Axmed Gurey",
+    "category": "Medieval",
+    "image": "/src/assets/images/bosaso.png",
+    "description_en": "The Sultanate of Adal (Cadal), headquartered in the northwest, rose to global prominence under the legendary leadership of Imam Ahmed Gurey (Ahmed bin Ibrahim al-Ghazi). Defending the Horn of Africa from Abyssinian expansion, the Imam launched a historic campaign, defeating Abyssinian forces and capturing their capital in 1521. This struggle transformed regional dynamics until the Portuguese intervened to support Abyssinia, leading to the Imam's death in battle in 1543 and the eventual fragmentation of the Adal Sultanate.",
+    "description_so": "Saldanaddii Cadal oo xarunteedu ahayd waqooyi-galbeed waxay heshay aqoonsi caalami ah xilligii uu hoggaaminayay Al-Imaam Axmed Gurey (Axmed Ibraahim al-Ghazi). Isagoo difaacaya Geeska Afrika, wuxuu qaaday duullaan taariikhi ah isagoo ka adkaaday ciidamadii Xabashida 1521-kii kuna qabsaday caasimaddooda. Halgankaas wuxuu beddelay awooddii gobolka ilaa markii dambe Boortaqiisku u soo gurmaday Xabashida, taas oo keentay shahiidnimadii Imaamka ee 1543-dii iyo burburkii Cadal."
+  },
+  {
+    "year": "1750 - 1920",
+    "event_en": "Sultanate of Geledi & Afgooye Dynasty",
+    "event_so": "Saldanaddii Geledi & Boqortooyadii Afgooye",
+    "category": "Modern",
+    "image": "/src/assets/images/culture.png",
+    "description_en": "The Geledi Sultanate was a highly organized southern dynasty headquartered in the fertile riverine city of Afgooye under the 'Gobroon' dynasty. It maintained a sophisticated federal-style administration that respected local autonomy while uniting clans under a central system of customary law and defense. The Geledi Sultans heavily promoted riverine agriculture (cotton, bananas, and grain) and protected southern Somali trade routes. They are famous for their military victories, including defending their territories from the Bardera religious reformers and repelling external incursions.",
+    "description_so": "Saldanadda Geledi oo xarunteedu ahayd magaalada Afgooye ee webiga Shabeelle agtiisa, waxay ahayd maamul federaal ah oo aad u habaysan oo ay xukumi jireen boqortooyadii 'Gobroon'. Waxay dhistay nidaam maamul oo ixtiraamaya madax-bannaanida qabaa'ilka iyagoo hoos keenay xeer iyo difaac dhexe. Geledi waxay horumarisay beeraha (suufka, muuska, iyo badarka), waxayna ilaalisay waddooyinka ganacsiga ee koonfurta Soomaaliya iyagoo guulo waaweyn ka gaaray difaaca dalka."
+  },
+  {
+    "year": "1885 - 1925",
+    "event_en": "Sultanate of Hobyo (Keenidiid Monarchy)",
+    "event_so": "Saldanaddii Hobyo (Boqortooyadii Keenidiid)",
+    "category": "Modern",
+    "image": "/src/assets/images/bosaso.png",
+    "description_en": "Founded by the ambitious leader Yusuf Ali Keenidiid, the Sultanate of Hobyo represented a highly centralized modern monarchy in central Somalia. With its capital at the historic port of Hobyo, the sultanate maintained a disciplined, well-armed standing army and engaged in direct international trade. The Hobyo state successfully centralized local authority, navigating complex diplomatic and commercial treaties with European powers until the Italian colonial administration forcefully dissolved the state in 1925, exileing the Sultan to Mogadishu.",
+    "description_so": "Waxaa aasaasay suldaankii caanka ahaa ee Yuusuf Cali Keenidiid, waxayna ahayd boqortooyo dhexe oo awood badan oo ka jirtay bartamaha Soomaaliya. Iyadoo xarunteedu ahayd dekedda Hobyo, waxay lahayd ciidan qalabaysan iyo xiriir ganacsi oo caalami ah. Hobyo waxay si guul leh u mideysay maamulada deegaanka, iyadoo heshiisyo kala duwan la gashay quwadihii Yurub ilaa markii dambe gumeystihii Talyaanigu uu xoog ku baabiiyay maamulkii suldaanka sanadkii 1925-kii asagoo suldaanka u musaafuriyay Muqdisho."
+  },
+  {
+    "year": "1884 - 1885",
+    "event_en": "The Berlin Conference & Scramble for Somalia",
+    "event_so": "Shirkii Berlin & Qaybintii Soomaaliya",
+    "category": "Colonial",
+    "image": "/src/assets/images/laasgeel.png",
+    "description_en": "The Berlin Conference (1884-1885) marked the official partitioning of the Somali peninsula. European colonial powers (Britain, Italy, and France) and the Abyssinian Empire divided the Somali nation into five artificial administrative zones: British Somaliland in the north, French Somaliland in Djibouti, Italian Somaliland in the south, Ogaden under Abyssinia, and the Northern Frontier District (NFD) under British Kenya. This partition was executed purely for imperial interests, completely ignoring the unified language, culture, and religion of the Somali people.",
+    "description_so": "Shirkii Berlin (1884-1885) wuxuu calaamad u ahaa kala qaybintii dulmiga ahayd ee dhulka Soomaaliyeed. Quwadihii reer Yurub (Ingiriiska, Talyaaniga, iyo Faransiiska) iyo boqortooyadii Xabashida waxay u qaybsadeen dalka shan qaybood oo kala duwan: British Somaliland (waqooyiga), French Somaliland (Jabuuti), Italian Somaliland (koonfurta), Ogaden oo Xabashida la raaciyay, iyo NFD oo Kenya la raaciyay, iyagoo gabi ahaanba iska indho-tiray midnimada afka, dhaqanka, iyo diinta ee shacabka Soomaaliyeed."
+  },
+  {
+    "year": "1905",
+    "event_en": "The Shalanbood Treaty & Scholarly Resistance",
+    "event_so": "Axdigii Shalanbood & Halgankii Culimada (1905)",
+    "category": "Colonial",
+    "image": "/src/assets/images/culture.png",
+    "description_en": "In response to aggressive European colonial treaties and attempts to subvert traditional Islamic systems, prominent Somali scholars and traditional leaders gathered in Shalanbood in 1905. Led by highly respected scholars like Sheikh Xasan Barsane, Suldaan Cali Ciise, and Sheikh Uweys al-Qadiri, they established a unified code of resistance (Axdigii Shalanbood), declaring armed struggle against colonial intrusion to be a religious and national duty for all Somalis.",
+    "description_so": "Si looga jawaabo amarradii gallafsan ee gumeystayaasha reer Yurub ee isku dayayay inay beddelaan nidaamka bulshada iyo diinta, culimadii iyo waxgaradkii Soomaaliyeed ayaa ku kulmay magaalada Shalanbood sannadkii 1905-tii. Waxaa hormuud u ahaa culimo caan ah oo ay ka mid yihiin Sheikh Xasan Barsane, Suldaan Cali Ciise, iyo Sheikh Uweys al-Qadiri, iyagoo saxiixay 'Axdigii Shalanbood' oo ku baaqaya halgan hubeysan oo dalka iyo diinta lagu difaaco."
+  },
+  {
+    "year": "1900 - 1920",
+    "event_en": "The Darwiish Armed Resistance & Taleex",
+    "event_so": "Halgankii Hubaysnaa ee Darwiish iyo Taleex",
+    "category": "Resistance",
+    "image": "/src/assets/images/bosaso.png",
+    "description_en": "The Darwiish movement, led by Sayyid Mohamed Abdulle Hassan, launched a monumental 20-year armed resistance against British, Italian, and Abyssinian forces. Waging a brilliant guerilla campaign from a massive network of stone fortresses centered in Taleex (Sool), the Sayyid successfully united northern and central clans under the Darwiish banner. The resistance stood as a symbol of Somali independence, using epic poetry and equestrian military tactics until the British deployed royal air force bombers in 1920 to defeat the movement.",
+    "description_so": "Halgankii Darwiish ee uu hoggaaminayay Sayid Maxamed Cabdille Xasan wuxuu ahaa iska caabin 20 sano ah oo lala galay Ingiriiska, Talyaaniga, iyo Xabashida. Iyagoo ka dagaallamaya shabakad qalcado dhagax ah oo xarunteedu ahayd Taleex (Sool), Sayidku wuxuu si guul leh u mideeyay qabaa'ilka waqooyiga iyo bartamaha. Halganku wuxuu ahaa astaanta madax-bannaanida Soomaaliya, iyagoo adeegsaday gabayo iyo tabo dagaal oo fardoood ah, ilaa markii dambe Ingiriisku u adeegsaday diyaaradaha dagaalka 1920-kii si ay u jabiyaan dhaqdhaqaaqa."
+  },
+  {
+    "year": "1943 - 1954",
+    "event_en": "The Somali Youth League & Flag Design",
+    "event_so": "Ururkii S.Y.L & Abuuristii Calanka Soomaaliyeed",
+    "category": "Independence",
+    "image": "/src/assets/images/culture.png",
+    "description_en": "The Somali Youth League (S.Y.L.), initially founded as the Somali Youth Club by 13 visionary young nationalists in Mogadishu, became the leading political force for independence and unification. The S.Y.L. established branches across all five Somali territories, actively fighting tribalism and advocating for a unified nation. In 1954, S.Y.L. pioneer Mohammed Awale Liban designed the stunning light-blue flag with a central white five-pointed star, representing the dream of unifying all five partitioned Somali regions under a single sovereign flag.",
+    "description_so": "Ururkii S.Y.L oo ay aasaaseen 13 dhalinyaro ah magaalada Muqdisho wuxuu horseed u ahaa halgankii siyaasadeed ee xornimada. S.Y.L waxay xafiisyo ka furatay dhammaan shantii qaybood ee Soomaaliya, iyagoo la dagaallamay qabyaaladda ugana dooday midnimada qaranka. Sannadkii 1954-tii, halgame Maxamed Cawale Liibaan wuxuu naqshadeeyay calanka buluugga ah ee leh xiddigta shanta gees leh si uu u muujiyo riyada midnimada shanta qaybood ee Soomaaliyeed ee gumeysigu kala qaybiyay."
+  },
+  {
+    "year": "1960 - 1969",
+    "event_en": "Independence and Democratic Civilian Rule",
+    "event_so": "Xornimadii & Dhalashadii Jamhuuriyadda Soomaaliya",
+    "category": "Independence",
+    "image": "/src/assets/images/mogadishu.png",
+    "description_en": "Somalia achieved partial unification and independence in 1960. The British Somaliland protectorate gained independence on June 26, followed by Italian Somaliland on July 1. The two territories immediately unified to form the Somali Republic. Aden Abdulle Osman was elected as the first President under a democratic civilian system, with Cabdirisaaq Xaji Xuseen serving as Prime Minister. Despite inheriting a weak colonial economy, this era was remembered for high democratic ideals, administrative reforms, and national pride.",
+    "description_so": "Soomaaliya waxay xornimo iyo midnimo heshay 1960-kii. Gobollada waqooyi (British Somaliland) waxay xoroobeen 26-kii June, gobollada koonfureedna 1-dii July, iyagoo isla markiiba midoobay si ay u dhisaan Jamhuuriyadda Soomaaliya. Aaden Cabdulle Cismaan ayaa loo doortay madaxweynihii ugu horreeyay ee dalka ee rayid ah, isagoo Ra'iisulwasaare u magacabay Cabdirisaaq Xaji Xuseen. Xilligaas waxaa lagu xusuustaa mabaadi'da dimoqraadiyadda iyo sharafta qaranka."
+  },
+  {
+    "year": "1969 - 1991",
+    "event_en": "The Military Government & Scientific Socialism",
+    "event_so": "Dowladdii Kacaanka militariga ah iyo Qoristii Afka",
+    "category": "Modern",
+    "image": "/src/assets/images/laasgeel.png",
+    "description_en": "Following the assassination of President Abdirashid Ali Shermarke, General Mohamed Siyaad Barre seized power in a bloodless coup on October 21, 1969. The military government implemented 'Scientific Socialism', introducing massive social programs. Key historic accomplishments included the formal writing of the Somali language script in 1972, nation-wide literacy campaigns, establishing modern industries, rural development initiatives, and building the third most powerful military force on the African continent until the state's collapse in 1991.",
+    "description_so": "Ka dib markii la dilay Madaxweyne Cabdirashiid Cali Sharma'arke, militariga uu hoggaaminayay Jeneraal Maxamed Siyaad Barre ayaa la wareegay xukunka dalka 21-kii October 1969-kii. Kacaanku wuxuu hirgeliyay 'Hanti-wadaagga Cilmiga ah'. Guulaha taariikhiga ah waxaa ka mid ah qoristii rasmiga ahayd ee afka Soomaaliga (1972), ololihii weynaa ee horumarinta iyo barista reer miyiga, dhisidda wershado casri ah, iyo dhismihii ciidankii saddexaad ee ugu awoodda badnaa qaaradda Afrika."
+  }
+]

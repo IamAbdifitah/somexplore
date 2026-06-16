@@ -1,0 +1,36 @@
+{
+  "traditions": [
+    {
+      "name_en": "Nomadic Lifestyle",
+      "name_so": "Noloshada Reer Miyiga",
+      "description_en": "The backbone of Somali society, focused on livestock rearing and seasonal migration in search of pasture.",
+      "description_so": "Nidaamka nolosha miyiga waa lafdhabarta bulshada Soomaaliyeed, isagoo ku qotoma dhaqashada xoolaha iyo guur-guurka xilliyeed si loo helo daaq iyo biyo.",
+      "image": "/src/assets/images/culture.png"
+    },
+    {
+      "name_en": "Poetry & Oral History",
+      "name_so": "Suugaanta & Sheekooyinka Hadalka",
+      "description_en": "Somalia is globally renowned as the 'Nation of Poets', where history, wisdom, and laws are preserved and passed down through verse.",
+      "description_so": "Soomaaliya waxaa caalamka looga yaqaannaa 'Millaad-ka Gabayaaga', halkaas oo taariikhda, xikmadda, iyo shuruucda bulshada lagu kaydiyo laguna gudbiyo maansooyinka.",
+      "image": "/src/assets/images/culture.png"
+    }
+  ],
+  "food": [
+    {
+      "name_en": "Bariis Iskukaris",
+      "name_so": "Bariis Iskukaris",
+      "description_en": "The flagship Somali rice dish slow-cooked with aromatic spices, raisins, and served with meat.",
+      "description_so": "Cuntada ugu caansan Soomaalida ee bariiska ah oo lagu kariyey xawaashyo udug badan, sabiib, laguna daray hilib la kariyey.",
+      "recipe_en": "Basmati rice, cardamom, cloves, cinnamon, cumin, and lamb or goat meat.",
+      "recipe_so": "Bariis Basmati ah, hayl, qaranfoul, qorfe, kamoon, iyo hilib ari ama hilib geel."
+    },
+    {
+      "name_en": "Somali Chai (Shaah)",
+      "name_so": "Shaaha Soomaalida (Shaah)",
+      "description_en": "Spiced hot milk tea brewed with ginger, cardamom, and cinnamon, reflecting Somali hospitality.",
+      "description_so": "Shaah kulul oo caano leh laguna kariyey sinjibiil, hayl, iyo qorfe, kaas oo ka turjumaya marti-gelinta Soomaalida.",
+      "recipe_en": "Black tea leaves, milk, ginger, cloves, and fresh cardamom.",
+      "recipe_so": "Caleen shaah ah, caano, sinjibiil, qaranfoul, iyo hayl cusub."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question_en": "What is the capital city of Somalia?",
+    "question_so": "Waa maxay magaalo-madaxda dowladda Soomaaliya?",
+    "options_en": ["Hargeisa", "Mogadishu", "Garowe", "Kismaayo"],
+    "options_so": ["Hargeysa", "Muqdisho", "Garowe", "Kismaayo"],
+    "answer_en": "Mogadishu",
+    "answer_so": "Muqdisho",
+    "category": "Geography"
+  },
+  {
+    "id": 2,
+    "question_en": "Which ancient trading empire was located on the Somali coast and traded with ancient Egypt?",
+    "question_so": "Kuwama ahaa boqortooyadii qadiimiga ahayd ee ka jirtay xeebaha Soomaalida ee xiriirka la lahayd dalka Masar?",
+    "options_en": ["Kush", "Axum", "Punt", "Mali"],
+    "options_so": ["Kush", "Aksumiin", "Punt (Boonti)", "Mali"],
+    "answer_en": "Punt",
+    "answer_so": "Punt (Boonti)",
+    "category": "History"
+  },
+  {
+    "id": 3,
+    "question_en": "Which animal holds central economic, cultural, and spiritual value in Somali nomadic life?",
+    "question_so": "Xayawaankee buu yahay kan ugu muhiimsan dhaqaalaha, dhaqanka, iyo nolosha reer miyiga Soomaalida?",
+    "options_en": ["Lion", "Camel", "Leopard", "Elephant"],
+    "options_so": ["Libaax", "Geel (Awr)", "Shabeel", "Maroodi"],
+    "answer_en": "Camel",
+    "answer_so": "Geel (Awr)",
+    "category": "Culture"
+  },
+  {
+    "id": 4,
+    "question_en": "What is the highest mountain peak in Somalia, located in the Cal Madow range of Sanaag?",
+    "question_so": "Waa maxay buurta ugu dheer Soomaaliya ee ku taal silsiladda Cal Madow ee Sanaag?",
+    "options_en": ["Mount Surad", "Mount Goolis", "Mount Shawa", "Mount Karkaar"],
+    "options_so": ["Buurta Surad", "Buuraha Goolis", "Buuraha Shawa", "Buuraha Karkaar"],
+    "answer_en": "Mount Surad",
+    "answer_so": "Buurta Surad",
+    "category": "Geography"
+  },
+  {
+    "id": 5,
+    "question_en": "Who led the historic 20-year Darwiish armed resistance movement against colonial forces?",
+    "question_so": "Yaa hoggaaminayay dhaqdhaqaaqii halganka hubaysnaa ee 20-ka sano ee Darwiishta ee la dagaallamay gumeystaha?",
+    "options_en": ["Imam Ahmed Gurey", "Sayyid Mohamed Abdulle Hassan", "Sheikh Xasan Barsane", "Imam Cumar Hilowle"],
+    "options_so": ["Al-Imaam Axmed Gurey", "Sayyid Maxamed Cabdille Xasan", "Sheikh Xasan Barsane", "Al-Imaam Cumar Hilowle"],
+    "answer_en": "Sayyid Mohamed Abdulle Hassan",
+    "answer_so": "Sayyid Maxamed Cabdille Xasan",
+    "category": "History"
+  },
+  {
+    "id": 6,
+    "question_en": "Which major river flows directly through the cities of Jowhar and Beledweyne in southern Somalia?",
+    "question_so": "Wabigee weeye kan mara magaalooyinka Jowhar iyo Beledweyne ee koonfurta Soomaaliya?",
+    "options_en": ["Jubba River", "Shabeelle River", "Togdheer River", "Nugaal River"],
+    "options_so": ["Wabiga Jubba", "Wabiga Shabeelle", "Wabiga Togdheer", "Wabiga Nugaal"],
+    "answer_en": "Shabeelle River",
+    "answer_so": "Wabiga Shabeelle",
+    "category": "Geography"
+  },
+  {
+    "id": 7,
+    "question_en": "What is the famous traditional Somali oral poetry form that is traditionally sung or chanted by men?",
+    "question_so": "Waa maxay qaabka ugu caansan maansada Soomaalida ee raggu tiriyan ama ku luuqeeyaan?",
+    "options_en": ["Shirib", "Dhaanto", "Gabay", "Baxdo"],
+    "options_so": ["Shiribka", "Dhaantada", "Gabayga", "Baxdo"],
+    "answer_en": "Gabay",
+    "answer_so": "Gabayga",
+    "category": "Culture"
+  },
+  {
+    "id": 8,
+    "question_en": "In which historic year did the northern and southern Somali territories gain independence and unify?",
+    "question_so": "Sannadkee bay gobollada waqooyi iyo koonfur ee Soomaaliya xornimadooda qaateen isla markaana midoobeen?",
+    "options_en": ["1943", "1954", "1960", "1991"],
+    "options_so": ["1943", "1954", "1960", "1991"],
+    "answer_en": "1960",
+    "answer_so": "1960",
+    "category": "History"
+  },
+  {
+    "id": 9,
+    "question_en": "Which geographic zone represents the dry and hot coastal plain between the Gulf of Aden and the Goolis mountains?",
+    "question_so": "Aaggee juqraafi ahaan u taagan dhuldeexda kulul ee u dhaxaysa Gacanka Cadmeed iyo buuraha Goolis?",
+    "options_en": ["Howd", "Guban", "Dooy", "Dhoobey"],
+    "options_so": ["Howd", "Guban", "Dooy", "Dhoobey"],
+    "answer_en": "Guban",
+    "answer_so": "Guban",
+    "category": "Geography"
+  },
+  {
+    "id": 10,
+    "question_en": "Who designed the light-blue Somali national flag with the five-pointed white star in 1954?",
+    "question_so": "Yaa naqshadeeyay calanka buluugga ah ee leh xiddigta shanta gees leh ee Soomaaliya sannadkii 1954-kii?",
+    "options_en": ["Aden Abdulle Osman", "Mohammed Awale Liban", "Imam Cumar Hilowle", "Abwaan Abdullahi Qarshe"],
+    "options_so": ["Aaden Cabdulle Cismaan", "Maxamed Cawale Liibaan", "Al-Imaam Cumar Hilowle", "Abwaan Cabdullaahi Qarshe"],
+    "answer_en": "Mohammed Awale Liban",
+    "answer_so": "Maxamed Cawale Liibaan",
+    "category": "History"
+  }
+]
