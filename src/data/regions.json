@@ -510,7 +510,7 @@
     "capital": "Burco",
     "description": "A northern region named after its dry riverbed, a major center for livestock trade.",
     "population": "887,450",
-    "image": "/src/assets/images/culture.png",
+    "image": "/src/assets/images/burco.jpeg",
     "details": {
       "history": "Togdheer is named after the Togdheer River, a seasonal dry riverbed that runs through the region. The capital, Burco, is the second-largest city in Somaliland and is a massive marketplace for livestock trade, exporting millions of sheep and goats to the Gulf countries annually.",
       "attractions": [
@@ -541,7 +541,7 @@
     "capital": "Hargeisa",
     "description": "A prominent northern region featuring the capital Hargeisa and ancient Laas Geel rock art.",
     "population": "1,492,506",
-    "image": "/src/assets/images/laasgeel.png",
+    "image": "/src/assets/images/hargeisa.jpeg",
     "details": {
       "history": "Woqooyi Galbeed (North West) is a high-altitude region in the north. It is home to Hargeisa, a bustling commercial and cultural capital. The region contains Laas Geel, featuring some of the oldest and best-preserved Neolithic rock art in the entire African continent, dating back over 5,000 years.",
       "attractions": [
