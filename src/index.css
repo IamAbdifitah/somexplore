@@ -1,82 +1,150 @@
 @import "tailwindcss";
 
 :root {
-  --bg-color: #050B14;
-  --text-color: #F8FAFC;
+  --bg-color: #071A2B;
+  --text-color: #F3E8D0;
   --text-main: #FFFFFF;
   --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(243, 232, 208, 0.12);
   --glass-bg-hover: rgba(255, 255, 255, 0.1);
-  --glass-border-hover: rgba(255, 255, 255, 0.2);
+  --glass-border-hover: rgba(216, 168, 78, 0.3);
 }
 
 :root.light {
-  --bg-color: #F8FAFC;
-  --text-color: #334155;
-  --text-main: #0F172A;
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(0, 0, 0, 0.08);
-  --glass-bg-hover: rgba(255, 255, 255, 0.85);
-  --glass-border-hover: rgba(0, 0, 0, 0.12);
+  --bg-color: #FAF5EA;
+  --text-color: #10202B;
+  --text-main: #071A2B;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(7, 26, 43, 0.1);
+  --glass-bg-hover: rgba(255, 255, 255, 0.95);
+  --glass-border-hover: rgba(8, 126, 164, 0.25);
 }
 
 @theme {
-  --color-somalia-blue: #00ADEF;
-  --color-somalia-green: #1EA84C;
+  --color-somalia-navy: #071A2B;
+  --color-somalia-blue: #087EA4;
+  --color-somalia-sand: #F3E8D0;
   --color-somalia-white: #FFFFFF;
+  --color-somalia-darkText: #10202B;
+  --color-somalia-gold: #D8A84E;
+  
+  --color-somalia-green: #1EA84C;
   --color-somalia-dark: var(--bg-color);
-  --color-somalia-accent: #E6B325;
+  --color-somalia-accent: #D8A84E;
   --color-somalia-soft: var(--text-color);
   --color-somalia-text-main: var(--text-main);
 
   --animate-fade-in: fadeIn 0.5s ease-out forwards;
   --animate-slide-up: slideUp 0.5s ease-out forwards;
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
 
   @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
 
   @keyframes slideUp {
-    0% {
-      transform: translateY(20px);
-      opacity: 0;
-    }
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
 
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
   }
 }
 
 body {
-  @apply bg-somalia-dark text-somalia-soft antialiased overflow-x-hidden;
-  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Plus Jakarta Sans', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
 }
 
 @utility glass-morphism {
-  @apply bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] shadow-xl;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 20px 40px -15px rgba(7, 26, 43, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @utility glass-card {
-  @apply glass-morphism rounded-3xl transition-all duration-300 hover:bg-[var(--glass-bg-hover)] hover:border-[var(--glass-border-hover)];
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.75rem;
+  box-shadow: 0 20px 40px -15px rgba(7, 26, 43, 0.4);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@utility text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-somalia-blue to-somalia-green;
+.glass-card:hover {
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-hover);
+  box-shadow: 0 25px 50px -12px rgba(8, 126, 164, 0.25);
+}
+
+@utility text-gradient-ocean {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #087EA4 0%, #38BDF8 100%);
+}
+
+@utility text-gradient-gold {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #F3E8D0 0%, #D8A84E 100%);
+}
+
+@utility text-gradient-somalia {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #FFFFFF 0%, #087EA4 50%, #D8A84E 100%);
 }
 
 @utility btn-primary {
-  @apply px-6 py-3 bg-somalia-blue hover:bg-somalia-blue/90 text-white rounded-full font-medium transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-somalia-blue/20;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #087EA4 0%, #066686 100%);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 10px 25px -5px rgba(8, 126, 164, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0994C1 0%, #087EA4 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 15px 30px -5px rgba(8, 126, 164, 0.5), 0 0 20px rgba(216, 168, 78, 0.2);
+}
+
+@utility btn-gold {
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #D8A84E 0%, #B88832 100%);
+  color: #071A2B;
+  border-radius: 9999px;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px -5px rgba(216, 168, 78, 0.3);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 15px 30px -5px rgba(216, 168, 78, 0.5);
 }
 
 .hide-scrollbar::-webkit-scrollbar {
@@ -90,13 +158,19 @@ body {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-somalia-dark;
+  background: #071A2B;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-somalia-blue/30 rounded-full hover:bg-somalia-blue/50;
+  background: rgba(8, 126, 164, 0.4);
+  border-radius: 9999px;
+  border: 2px solid #071A2B;
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(216, 168, 78, 0.6);
+}

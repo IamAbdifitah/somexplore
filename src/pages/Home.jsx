@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, ArrowRight, MapPin, Star } from 'lucide-react';
+import { Search, ArrowRight, MapPin, Star, Sparkles, Compass, ShieldCheck } from 'lucide-react';
 import { useNavigate, Link } from 'react-router-dom';
 import regionsData from '../data/regions.json';
 import { useLanguage } from '../context/LanguageContext';
@@ -67,96 +67,135 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="container mx-auto px-6 pb-20"
+            className="container mx-auto px-4 md:px-8 pb-24 max-w-7xl"
         >
             {/* Hero Section */}
-            <section className="relative h-[80vh] flex flex-col items-center justify-center text-center overflow-hidden rounded-[3rem] mb-20 shadow-2xl">
-                <div className="absolute inset-0">
+            <section className="relative min-h-[82vh] flex flex-col items-center justify-center text-center overflow-hidden rounded-[2.5rem] md:rounded-[3.5rem] mb-20 border border-[#F3E8D0]/20 shadow-2xl shadow-[#071A2B]/80 my-4">
+                {/* Background Image & Overlays */}
+                <div className="absolute inset-0 z-0">
                     <img
                         src="/images/mogadishu.png"
                         alt="Somalia Hero"
-                        className="w-full h-full object-cover opacity-60 scale-105"
+                        className="w-full h-full object-cover scale-105 filter brightness-[0.7] contrast-[1.15]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-somalia-dark/60 via-transparent to-somalia-dark" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#071A2B]/80 via-[#071A2B]/40 to-[#071A2B]" />
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#071A2B]/30 to-[#071A2B]" />
                 </div>
 
                 <motion.div
-                    initial={{ y: 50, opacity: 0 }}
+                    initial={{ y: 40, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.2, duration: 0.8 }}
-                    className="relative z-10 max-w-4xl px-4 w-full"
+                    className="relative z-10 max-w-4xl px-6 w-full py-16"
                 >
-                    <span className="inline-block px-4 py-1.5 bg-somalia-blue/20 backdrop-blur-md rounded-full text-somalia-blue text-sm font-semibold mb-6">
-                        {t('hero_tagline')}
-                    </span>
-                    <h1 className="text-6xl md:text-8xl font-black text-somalia-text-main mb-8 tracking-tight">
-                        {t('hero_title')} <br /> <span className="text-gradient">{t('hero_gradient')}</span>
+                    {/* Badge Pill */}
+                    <div className="inline-flex items-center gap-2 px-5 py-2 bg-[#071A2B]/70 backdrop-blur-xl border border-[#D8A84E]/40 rounded-full text-[#F3E8D0] text-xs md:text-sm font-bold tracking-widest uppercase mb-8 shadow-xl">
+                        <Sparkles size={15} className="text-[#D8A84E]" />
+                        <span>{t('hero_tagline')}</span>
+                    </div>
+
+                    {/* Headline */}
+                    <h1 className="text-5xl sm:text-7xl md:text-8xl font-black font-heading text-white mb-8 tracking-tight leading-[1.05]">
+                        {t('hero_title')} <br /> 
+                        <span className="text-gradient-somalia">{t('hero_gradient')}</span>
                     </h1>
 
-                    {/* Search Bar */}
-                    <form onSubmit={handleSearch} className="relative max-w-2xl mx-auto mb-12">
-                        <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none">
-                            <Search className="text-somalia-soft/40" size={20} />
+                    {/* Search Bar - Visit Dubai style floating bar */}
+                    <form onSubmit={handleSearch} className="relative max-w-2xl mx-auto mb-10 group">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-[#087EA4] via-[#D8A84E] to-[#087EA4] rounded-full blur-md opacity-40 group-hover:opacity-75 transition duration-500" />
+                        <div className="relative flex items-center bg-[#071A2B]/90 backdrop-blur-2xl border border-[#F3E8D0]/25 rounded-full p-2 shadow-2xl">
+                            <div className="pl-5 pr-2 text-[#F3E8D0]/60">
+                                <Search size={22} className="text-[#087EA4]" />
+                            </div>
+                            <input
+                                type="text"
+                                placeholder={t('search_placeholder')}
+                                className="w-full bg-transparent py-3 text-white text-base md:text-lg placeholder:text-[#F3E8D0]/50 focus:outline-none font-medium"
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                            />
+                            <button
+                                type="submit"
+                                className="btn-primary flex items-center gap-2 px-6 py-3.5 rounded-full text-sm md:text-base font-bold shadow-lg"
+                            >
+                                <span>{language === 'so' ? 'Raadi' : 'Search'}</span>
+                                <ArrowRight size={18} />
+                            </button>
                         </div>
-                        <input
-                            type="text"
-                            placeholder={t('search_placeholder')}
-                            className="w-full bg-[var(--glass-bg)] backdrop-blur-xl border border-[var(--glass-border)] rounded-full py-5 pl-16 pr-24 text-somalia-text-main text-lg focus:outline-none focus:ring-2 focus:ring-somalia-blue/50 transition-all shadow-inner"
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                        />
-                        <button
-                            type="submit"
-                            className="absolute right-3 top-1/2 -translate-y-1/2 bg-somalia-blue hover:bg-somalia-blue/90 text-white rounded-full p-3 font-semibold transition-all shadow"
-                        >
-                            <ArrowRight size={20} />
-                        </button>
                     </form>
 
-                    <button
-                        onClick={() => navigate('/regions')}
-                        className="btn-primary flex items-center gap-3 mx-auto text-lg px-8 py-4"
-                    >
-                        {t('start_btn')} <ArrowRight size={20} />
-                    </button>
+                    {/* Quick Explore Pill CTA */}
+                    <div className="flex flex-wrap justify-center gap-4 items-center">
+                        <button
+                            onClick={() => navigate('/regions')}
+                            className="btn-gold flex items-center gap-3 text-base md:text-lg px-8 py-4 shadow-xl"
+                        >
+                            <Compass size={22} />
+                            <span>{t('start_btn')}</span>
+                            <ArrowRight size={20} />
+                        </button>
+                    </div>
                 </motion.div>
             </section>
 
             {/* Daily Fact Section */}
             <section className="mb-24">
-                <div className="glass-card p-10 flex flex-col md:flex-row items-center gap-8 border-l-4 border-l-somalia-blue">
-                    <div className="w-20 h-20 bg-somalia-blue/10 rounded-2xl flex items-center justify-center flex-shrink-0 animate-pulse-slow">
-                        <Star className="text-somalia-blue" size={32} />
+                <div className="glass-card p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-[#D8A84E]/30 bg-gradient-to-r from-[#071A2B]/90 via-[#071A2B]/60 to-[#071A2B]/90 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-[#D8A84E]/10 rounded-full blur-3xl pointer-events-none" />
+                    
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#D8A84E]/20 to-[#087EA4]/20 rounded-2xl border border-[#D8A84E]/40 flex items-center justify-center flex-shrink-0 shadow-inner">
+                        <Star className="text-[#D8A84E] fill-[#D8A84E]/20 animate-pulse" size={36} />
                     </div>
-                    <div>
-                        <h3 className="text-somalia-blue font-bold uppercase tracking-widest text-sm mb-2">{t('fact_title')}</h3>
+
+                    <div className="flex-1 text-center md:text-left">
+                        <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                            <ShieldCheck size={16} className="text-[#087EA4]" />
+                            <h3 className="text-[#D8A84E] font-extrabold uppercase tracking-widest text-xs md:text-sm">
+                                {t('fact_title')}
+                            </h3>
+                        </div>
+                        
                         <AnimatePresence mode="wait">
                             <motion.p
                                 key={currentFact}
-                                initial={{ opacity: 0, x: 20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: -20 }}
-                                className="text-2xl md:text-3xl font-light text-somalia-soft"
+                                initial={{ opacity: 0, y: 15 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -15 }}
+                                transition={{ duration: 0.5 }}
+                                className="text-xl md:text-3xl font-heading font-medium text-white leading-snug"
                             >
-                                {facts[currentFact]}
+                                "{facts[currentFact]}"
                             </motion.p>
                         </AnimatePresence>
                     </div>
                 </div>
             </section>
 
-            {/* Featured Regions */}
+            {/* Featured Regions Header & Grid */}
             <section className="mb-24">
-                <div className="flex justify-between items-end mb-12">
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
                     <div>
-                        <h2 className="text-4xl font-bold text-somalia-text-main mb-2">{t('featured_title')}</h2>
-                        <p className="text-somalia-soft/60">{t('featured_subtitle')}</p>
+                        <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-[#087EA4]/15 rounded-full border border-[#087EA4]/30 text-[#087EA4] text-xs font-bold uppercase tracking-wider mb-3">
+                            <MapPin size={14} />
+                            <span>{language === 'so' ? 'Laga Soo Doortay' : 'Curated Destinations'}</span>
+                        </div>
+                        <h2 className="text-4xl md:text-5xl font-black font-heading text-white tracking-tight">
+                            {t('featured_title')}
+                        </h2>
+                        <p className="text-[#F3E8D0]/70 text-base md:text-lg mt-2">
+                            {t('featured_subtitle')}
+                        </p>
                     </div>
-                    <Link to="/regions" className="text-somalia-blue flex items-center gap-2 hover:gap-3 transition-all">
-                        {t('see_all')} <ArrowRight size={18} />
+                    <Link 
+                        to="/regions" 
+                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-[#F3E8D0]/15 hover:border-[#087EA4] text-white hover:text-[#087EA4] font-bold text-sm transition-all group w-fit"
+                    >
+                        <span>{t('see_all')}</span>
+                        <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                     </Link>
                 </div>
 
+                {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {featuredRegions.map((region, index) => {
                         const name = language === 'so' ? regionsTranslations[region.id]?.name || region.name : region.name;
@@ -168,31 +207,45 @@ const Home = () => {
                                 key={region.id}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ delay: index * 0.1 }}
+                                transition={{ delay: index * 0.15, duration: 0.6 }}
                                 viewport={{ once: true }}
-                                className="group relative h-[450px] rounded-[2.5rem] overflow-hidden cursor-pointer"
+                                className="group relative h-[480px] rounded-[2.5rem] overflow-hidden cursor-pointer border border-[#F3E8D0]/15 hover:border-[#D8A84E]/50 shadow-2xl transition-all duration-500"
                                 onClick={() => navigate(`/region/${region.id}`)}
                             >
+                                {/* Region Image */}
                                 <img
                                     src={region.image}
                                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                     alt={name}
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-somalia-dark via-transparent to-transparent opacity-80" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#071A2B] via-[#071A2B]/40 to-transparent opacity-90 group-hover:opacity-85 transition-opacity" />
 
-                                <div className="absolute bottom-8 left-8 right-8">
-                                    <div className="flex items-center gap-2 mb-2">
-                                        <MapPin size={16} className="text-somalia-blue" />
-                                        <span className="text-somalia-blue text-xs font-bold uppercase tracking-widest">{capital}</span>
-                                    </div>
-                                    <h3 className="text-3xl font-bold text-somalia-text-main mb-3">{name}</h3>
-                                    <p className="text-somalia-soft/80 text-sm line-clamp-2 mb-6 group-hover:opacity-100 transition-opacity">
+                                {/* Floating Header Badges */}
+                                <div className="absolute top-6 left-6 right-6 flex justify-between items-center z-10">
+                                    <span className="px-3.5 py-1.5 bg-[#071A2B]/80 backdrop-blur-md rounded-full text-[#F3E8D0] text-xs font-bold uppercase tracking-widest border border-[#F3E8D0]/20 flex items-center gap-1.5 shadow-lg">
+                                        <MapPin size={12} className="text-[#087EA4]" />
+                                        {capital}
+                                    </span>
+                                    <span className="w-9 h-9 rounded-full bg-[#071A2B]/70 backdrop-blur-md border border-[#D8A84E]/40 flex items-center justify-center text-[#D8A84E]">
+                                        <Star size={16} className="fill-[#D8A84E]" />
+                                    </span>
+                                </div>
+
+                                {/* Content Details */}
+                                <div className="absolute bottom-8 left-8 right-8 z-10">
+                                    <h3 className="text-3xl font-black font-heading text-white mb-2 group-hover:text-[#F3E8D0] transition-colors">
+                                        {name}
+                                    </h3>
+                                    <p className="text-[#F3E8D0]/80 text-sm line-clamp-2 mb-6 leading-relaxed font-light">
                                         {description}
                                     </p>
-                                    <div className="flex items-center justify-between opacity-0 group-hover:opacity-100 transition-all transform translate-y-4 group-hover:translate-y-0">
-                                        <span className="text-somalia-text-main font-medium flex items-center gap-2">{t('explored')} <Star size={14} /></span>
-                                        <div className="w-10 h-10 rounded-full bg-[var(--glass-bg)] border border-[var(--glass-border)] flex items-center justify-center">
-                                            <ArrowRight size={20} className="text-somalia-text-main" />
+
+                                    <div className="flex items-center justify-between pt-4 border-t border-[#F3E8D0]/10">
+                                        <span className="text-xs font-bold uppercase tracking-wider text-[#087EA4] flex items-center gap-1.5">
+                                            {t('explored')}
+                                        </span>
+                                        <div className="w-10 h-10 rounded-full bg-[#087EA4] text-white flex items-center justify-center group-hover:bg-[#D8A84E] group-hover:text-[#071A2B] transition-all duration-300 shadow-lg">
+                                            <ArrowRight size={20} />
                                         </div>
                                     </div>
                                 </div>
@@ -206,3 +259,4 @@ const Home = () => {
 };
 
 export default Home;
+
