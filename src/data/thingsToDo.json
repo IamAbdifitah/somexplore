@@ -1,0 +1,56 @@
+[
+  {
+    "id": "todo-1",
+    "icon": "🏖️",
+    "category_en": "Beaches",
+    "category_so": "Xeebaha",
+    "subtitle_en": "Relax & Explore",
+    "subtitle_so": "Nasasho & Sahangali",
+    "image": "/images/mogadishu.png"
+  },
+  {
+    "id": "todo-2",
+    "icon": "🏛️",
+    "category_en": "Heritage",
+    "category_so": "Hiddaha",
+    "subtitle_en": "History & Culture",
+    "subtitle_so": "Taariikhda & Dhaqanka",
+    "image": "/images/laasgeel.png"
+  },
+  {
+    "id": "todo-3",
+    "icon": "🏔️",
+    "category_en": "Mountains",
+    "category_so": "Buuraha",
+    "subtitle_en": "Adventure",
+    "subtitle_so": "Socdaal & Koraan",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": "todo-4",
+    "icon": "🌊",
+    "category_en": "Coastal",
+    "category_so": "Badda",
+    "subtitle_en": "Ocean Experiences",
+    "subtitle_so": "Safarrada Badda",
+    "image": "/images/kismayo.png"
+  },
+  {
+    "id": "todo-5",
+    "icon": "🍲",
+    "category_en": "Food",
+    "category_so": "Cuntada",
+    "subtitle_en": "Somali Cuisine",
+    "subtitle_so": "Cuntada Dhaqanka",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": "todo-6",
+    "icon": "📷",
+    "category_en": "Photography",
+    "category_so": "Sawirada",
+    "subtitle_en": "Beautiful Places",
+    "subtitle_so": "Goobaha Muuqda",
+    "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1200&q=80"
+  }
+]

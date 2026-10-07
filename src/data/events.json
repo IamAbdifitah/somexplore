@@ -1,0 +1,50 @@
+[
+  {
+    "id": "evt-1",
+    "title_en": "Somali Cultural & Heritage Festival",
+    "title_so": "Hantida Dhaqanka & Hiddaha Soomaaliyeed",
+    "location_en": "Mogadishu",
+    "location_so": "Muqdisho",
+    "date": "Oct 24, 2026",
+    "filter": "Upcoming",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "desc_en": "Annual nationwide showcase of traditional Dhaanto, ancient poetry recitations, artisanal crafts, and Somali cuisine.",
+    "desc_so": "Xaflad sanadle ah oo lagu soo bandhigo dhaantada, gabayada qadiimiga ah, farshaxanka, iyo cuntooyinka dhaqanka."
+  },
+  {
+    "id": "evt-2",
+    "title_en": "Mogadishu International Book Fair",
+    "title_so": "Bandhigga Buugaagta ee Muqdisho",
+    "location_en": "Mogadishu",
+    "location_so": "Muqdisho",
+    "date": "Nov 12, 2026",
+    "filter": "This Month",
+    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
+    "desc_en": "Gathering of prominent Somali authors, poets, historians, and international literature enthusiasts.",
+    "desc_so": "Bandhigga weyn oo ay ku kulmaan qoraayaasha, gabayaaga, iyo taariikhyahanada Soomaaliyeed."
+  },
+  {
+    "id": "evt-3",
+    "title_en": "Berbera Maritime & Trade Expo",
+    "title_so": "Bandhigga Ganacsiga & Xeebaha ee Berbera",
+    "location_en": "Berbera",
+    "location_so": "Berbera",
+    "date": "Oct 18, 2026",
+    "filter": "This Week",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    "desc_en": "Celebrating centuries of Horn of Africa maritime trading legacy, dhow sailing races, and seafood festivals.",
+    "desc_so": "U dabaaldegida taariikhda ganacsiga baha ee Berbera, tartanka doonyaha, iyo cuntada xeebta."
+  },
+  {
+    "id": "evt-4",
+    "title_en": "Hargeisa International Arts & Poetry Forum",
+    "title_so": "Mawjadaha Artka & Gabayada ee Hargeysa",
+    "location_en": "Hargeisa",
+    "location_so": "Hargeysa",
+    "date": "Dec 05, 2026",
+    "filter": "Upcoming",
+    "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80",
+    "desc_en": "A celebration of visual arts, calligraphic traditions, storytelling, and contemporary Somali design.",
+    "desc_so": "Dabaaldegga farshaxanka muuqaalka ah, qoraalka Carabiga/Soomaaliga, iyo sheekooyinka hiddaha."
+  }
+]

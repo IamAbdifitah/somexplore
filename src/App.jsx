@@ -3,13 +3,17 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { AnimatePresence, motion } from 'framer-motion';
 import Splash from './components/Splash';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
+import Explore from './pages/Explore';
 import Regions from './pages/Regions';
 import RegionDetails from './pages/RegionDetails';
 import History from './pages/History';
 import Culture from './pages/Culture';
 import Quiz from './pages/Quiz';
 import Settings from './pages/Settings';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -18,16 +22,23 @@ function AnimatedRoutes() {
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home />} />
+                <Route path="/explore" element={<Explore />} />
+                <Route path="/destinations" element={<Regions />} />
+                <Route path="/experiences" element={<Explore />} />
+                <Route path="/events" element={<Explore />} />
                 <Route path="/regions" element={<Regions />} />
                 <Route path="/region/:id" element={<RegionDetails />} />
                 <Route path="/history" element={<History />} />
                 <Route path="/culture" element={<Culture />} />
                 <Route path="/quiz" element={<Quiz />} />
                 <Route path="/settings" element={<Settings />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
         </AnimatePresence>
     );
 }
+
 class ErrorBoundary extends React.Component {
     constructor(props) {
         super(props);
@@ -46,11 +57,11 @@ class ErrorBoundary extends React.Component {
     render() {
         if (this.state.hasError) {
             return (
-                <div className="min-h-screen bg-somalia-dark flex items-center justify-center p-6 font-sans">
+                <div className="min-h-screen bg-[#071A2B] flex items-center justify-center p-6 font-sans">
                     <div className="glass-card p-10 max-w-2xl w-full border border-red-500/30 shadow-2xl relative overflow-hidden text-center">
                         <div className="absolute top-0 left-0 w-full h-1 bg-red-500" />
                         <h2 className="text-3xl font-black text-white mb-4">Something went wrong</h2>
-                        <p className="text-somalia-soft/60 mb-6">
+                        <p className="text-[#F3E8D0]/60 mb-6">
                             SomExplore encountered an unexpected error.
                         </p>
                         <div className="bg-red-950/20 border border-red-500/10 rounded-2xl p-6 mb-6">
@@ -85,7 +96,7 @@ function App() {
     return (
         <ErrorBoundary>
             <Router>
-                <div className="min-h-screen bg-somalia-dark overflow-x-hidden">
+                <div className="min-h-screen bg-[#071A2B] overflow-x-hidden text-slate-100 flex flex-col">
                     <AnimatePresence>
                         {loading ? (
                             <Splash key="splash" onFinish={() => setLoading(false)} />
@@ -95,11 +106,13 @@ function App() {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.5 }}
+                                className="flex-1 flex flex-col justify-between"
                             >
                                 <Navbar />
-                                <main className="pt-20">
+                                <main className="pt-20 flex-1">
                                     <AnimatedRoutes />
                                 </main>
+                                <Footer />
                             </motion.div>
                         )}
                     </AnimatePresence>
@@ -110,3 +123,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "exp-1",
+    "category": "Beach & Coast",
+    "icon": "🏖️",
+    "title_en": "Lido Beach & Indian Ocean Wonders",
+    "title_so": "Xeebta Liido & Quruxda Badweynta Hindiya",
+    "desc_en": "Experience pristine white sand beaches, turquoise waves, and vibrant sunset dining along Mogadishu's coastline.",
+    "desc_so": "Khibrad u yeelo xeebaha ciidda cad, mawjadaha buluugga ah, iyo cashada fiidkii ee xeebta Muqdisho.",
+    "image": "/images/mogadishu.png",
+    "regionId": "banadir"
+  },
+  {
+    "id": "exp-2",
+    "category": "History & Heritage",
+    "icon": "🏛️",
+    "title_en": "Laas Geel Cave Art Expedition",
+    "title_so": "Sahanka Sawirada Qadiimiga ah ee Laas Geel",
+    "desc_en": "Journey 5,000 years back into ancient African rock art hidden within granite rock formations.",
+    "desc_so": "U socdaal 5,000 sano ka hor sawirada dhagaxyada qadiimiga ah ee ku yaal Laas Geel.",
+    "image": "/images/laasgeel.png",
+    "regionId": "maroodijeex"
+  },
+  {
+    "id": "exp-3",
+    "category": "Nature & Adventure",
+    "icon": "🌿",
+    "title_en": "Daallo Mountain & Cal Madow Hike",
+    "title_so": "Koraanka Buurta Daallo & Cal Madow",
+    "desc_en": "Trek through misty pine forests, rare frankincense groves, and dramatic clifftop panoramic viewpoints.",
+    "desc_so": "Ku socdaal kaymaha buuraha Daallo, geedaha beeyada, iyo muuqaallada caabuqa leh ee Cal Madow.",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+    "regionId-[#0]": "sanaag"
+  },
+  {
+    "id": "exp-4",
+    "category": "Food & Culture",
+    "icon": "🍽️",
+    "title_en": "Somali Spices & Culinary Traditions",
+    "title_so": "Udugga & Cuntada Dhaqanka Soomaaliyeed",
+    "desc_en": "Savor authentic Bariis Isku-karis, Suqaar, Camel Milk tea, and fresh seafood infused with aromatic spices.",
+    "desc_so": "Dhadhami bariiska isku-kariska ah, suqaarka, shaaha caanaha geela, iyo kalluunka cusub.",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+    "regionId": "banadir"
+  },
+  {
+    "id": "exp-5",
+    "category": "Culture & Tradition",
+    "icon": "🕌",
+    "title_en": "Dhaanto Folk Dance & Poetry Nights",
+    "title_so": "Ciyaarta Dhaanto & Habeennada Gabayada",
+    "desc_en": "Immerse yourself in traditional rhythmic Dhaanto dance performances and soul-stirring Somali poetry recitations.",
+    "desc_so": "Daawo ciyaaraha dhaantada iyo habeenada gabayada hiddaha iyo dhaqanka Soomaaliyeed.",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "regionId": "bari"
+  },
+  {
+    "id": "exp-6",
+    "category": "Photography",
+    "icon": "📸",
+    "title_en": "Coastal Architecture & Lighthouse Views",
+    "title_so": "Sawirada Dhismaha Qadiimiga ah ee Xeebaha",
+    "desc_en": "Capture historic Italian-Somali archways, coastal lighthouses, and bustling morning fish markets.",
+    "desc_so": "Sawir dhismayaasha qadiimiga ah, laydhka xeebaha, iyo suuqyada kalluunka ee waajibaadka subaxnimo.",
+    "image": "/images/kismayo.png",
+    "regionId": "jubbada-hoose"
+  }
+]

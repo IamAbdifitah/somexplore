@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, MapPin, Utensils, History as HistoryIcon, Camera, Award, Heart, Sparkles, Compass } from 'lucide-react';
+import { ArrowLeft, MapPin, Utensils, History as HistoryIcon, Camera, Award, Heart, Sparkles, Compass, Sun, ShieldCheck, ArrowRight, Share2 } from 'lucide-react';
 import regionsData from '../data/regions.json';
 import { useLanguage } from '../context/LanguageContext';
 import { regionsTranslations } from '../data/regionsTranslations';
@@ -16,7 +16,7 @@ const RegionDetails = () => {
         return (
             <div className="flex items-center justify-center min-h-[70vh] text-[#F3E8D0]">
                 <div className="glass-card p-12 text-center border border-[#F3E8D0]/20">
-                    <p className="text-2xl font-bold text-white mb-6">{t('region_not_found')}</p>
+                    <p className="text-2xl font-bold text-[#FFFFFF] mb-6">{t('region_not_found')}</p>
                     <button onClick={() => navigate('/regions')} className="btn-primary">
                         {t('back')}
                     </button>
@@ -31,6 +31,13 @@ const RegionDetails = () => {
     const culture = language === 'so' ? regionsTranslations[region.id]?.culture || region.details.culture : region.details.culture;
     const wildlife = language === 'so' ? regionsTranslations[region.id]?.wildlife || region.details.wildlife : region.details.wildlife;
 
+    // Gallery images: main image + 2 curated high-res Somali landscape photos
+    const galleryImages = [
+        region.image,
+        'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
+    ];
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -38,87 +45,107 @@ const RegionDetails = () => {
             exit={{ opacity: 0 }}
             className="bg-[#071A2B] min-h-screen pb-24"
         >
-            {/* Hero Section */}
-            <section className="relative min-h-[75vh] w-full overflow-hidden flex items-end">
-                <motion.img
-                    initial={{ scale: 1.08 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 1.5, ease: "easeOut" }}
-                    src={region.image}
-                    className="absolute inset-0 w-full h-full object-cover filter brightness-[0.7] contrast-[1.1]"
-                    alt={name}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#071A2B] via-[#071A2B]/40 to-[#071A2B]/30" />
+            {/* Navigation Header */}
+            <div className="container mx-auto px-6 md:px-12 pt-8 pb-4 max-w-7xl flex justify-between items-center z-20">
+                <button
+                    onClick={() => navigate('/regions')}
+                    className="flex items-center gap-2 px-5 py-2.5 bg-[#071A2B]/80 backdrop-blur-md rounded-full text-white border border-[#F3E8D0]/20 hover:bg-[#071A2B] hover:border-[#087EA4] transition-all shadow-xl font-medium text-sm"
+                >
+                    <ArrowLeft size={18} />
+                    <span>{t('back')}</span>
+                </button>
 
-                {/* Floating Top Nav Buttons */}
-                <div className="absolute top-8 left-6 md:left-12 right-6 md:right-12 flex justify-between items-center z-20 max-w-7xl mx-auto">
+                <div className="flex items-center gap-3">
                     <button
-                        onClick={() => navigate('/regions')}
-                        className="flex items-center gap-2 px-5 py-2.5 bg-[#071A2B]/75 backdrop-blur-md rounded-full text-white border border-[#F3E8D0]/20 hover:bg-[#071A2B] hover:border-[#087EA4] transition-all shadow-xl font-medium text-sm"
+                        onClick={() => {
+                            if (navigator.share) {
+                                navigator.share({ title: name, url: window.location.href });
+                            } else {
+                                navigator.clipboard.writeText(window.location.href);
+                                alert('Link copied!');
+                            }
+                        }}
+                        className="p-3 bg-[#071A2B]/80 backdrop-blur-md rounded-full border border-[#F3E8D0]/20 hover:bg-[#087EA4]/20 transition-all shadow-xl text-white"
+                        title="Share"
                     >
-                        <ArrowLeft size={18} />
-                        <span>{t('back')}</span>
+                        <Share2 size={18} />
                     </button>
-
                     <button
                         onClick={() => toggleFavorite(region.id)}
-                        className="p-3 bg-[#071A2B]/75 backdrop-blur-md rounded-full border border-[#F3E8D0]/20 hover:bg-[#071A2B] transition-all z-20 shadow-xl"
+                        className="p-3 bg-[#071A2B]/80 backdrop-blur-md rounded-full border border-[#F3E8D0]/20 hover:bg-[#071A2B] transition-all shadow-xl"
                     >
-                        <Heart size={20} className={isFavorite(region.id) ? "fill-red-500 text-red-500" : "text-white"} />
+                        <Heart size={18} className={isFavorite(region.id) ? "fill-red-500 text-red-500" : "text-white"} />
                     </button>
                 </div>
+            </div>
 
-                {/* Hero Overlay Content */}
-                <div className="relative z-10 container mx-auto px-6 md:px-12 pb-16 max-w-7xl w-full">
-                    <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
-                        <div>
-                            <motion.div
-                                initial={{ x: -20, opacity: 0 }}
-                                animate={{ x: 0, opacity: 1 }}
-                                transition={{ delay: 0.3 }}
-                                className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#087EA4]/20 backdrop-blur-md rounded-full text-[#087EA4] font-bold text-xs tracking-widest uppercase mb-4 border border-[#087EA4]/30"
-                            >
-                                <MapPin size={14} className="text-[#D8A84E]" />
-                                <span>{capital}</span>
-                            </motion.div>
-                            
-                            <motion.h1
-                                initial={{ y: 20, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ delay: 0.5 }}
-                                className="text-6xl md:text-8xl lg:text-9xl font-black font-heading text-white tracking-tight leading-none"
-                            >
-                                {name}
-                            </motion.h1>
+            {/* Header Title & Quick Badges */}
+            <div className="container mx-auto px-6 md:px-12 py-4 max-w-7xl">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#087EA4]/20 backdrop-blur-md rounded-full text-[#087EA4] font-bold text-xs tracking-widest uppercase mb-3 border border-[#087EA4]/30">
+                            <MapPin size={14} className="text-[#D8A84E]" />
+                            <span>{capital}</span>
                         </div>
+                        <h1 className="text-4xl md:text-6xl font-black font-heading text-white tracking-tight">
+                            {name}
+                        </h1>
+                    </div>
 
-                        {/* Top Quick Stats Pills */}
-                        <motion.div
-                            initial={{ y: 20, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 0.7 }}
-                            className="flex flex-wrap gap-4"
-                        >
-                            <div className="glass-morphism p-5 md:p-6 rounded-3xl text-center min-w-[130px] border border-[#F3E8D0]/20 bg-[#071A2B]/80 backdrop-blur-xl">
-                                <p className="text-[#F3E8D0]/50 text-[10px] font-extrabold uppercase mb-1 tracking-widest">{t('pop')}</p>
-                                <p className="text-white text-xl font-bold">{region.population}</p>
-                            </div>
-                            <div className="glass-morphism p-5 md:p-6 rounded-3xl text-center min-w-[130px] border border-[#F3E8D0]/20 bg-[#071A2B]/80 backdrop-blur-xl">
-                                <p className="text-[#F3E8D0]/50 text-[10px] font-extrabold uppercase mb-1 tracking-widest">{t('est')}</p>
-                                <p className="text-white text-xl font-bold">{region.stats.established}</p>
-                            </div>
-                        </motion.div>
+                    <div className="flex items-center gap-4">
+                        <div className="bg-[#071A2B]/80 border border-[#F3E8D0]/15 px-5 py-2.5 rounded-2xl">
+                            <p className="text-[#F3E8D0]/50 text-[10px] uppercase tracking-widest font-bold">{t('pop')}</p>
+                            <p className="text-white font-bold text-lg">{region.population}</p>
+                        </div>
+                        <div className="bg-[#071A2B]/80 border border-[#F3E8D0]/15 px-5 py-2.5 rounded-2xl">
+                            <p className="text-[#F3E8D0]/50 text-[10px] uppercase tracking-widest font-bold">{t('est')}</p>
+                            <p className="text-white font-bold text-lg">{region.stats.established}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Modern 3-Image Gallery Grid: [Large Image] [Small Image] [Small Image] */}
+            <section className="container mx-auto px-6 md:px-12 py-6 max-w-7xl">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 h-[380px] md:h-[480px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-[#F3E8D0]/15">
+                    {/* Large Main Image (2 cols on md+) */}
+                    <div className="md:col-span-2 relative group overflow-hidden h-full">
+                        <img
+                            src={galleryImages[0]}
+                            alt={name}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-[0.9] contrast-[1.05]"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#071A2B]/80 via-transparent to-transparent pointer-events-none" />
+                    </div>
+
+                    {/* 2 Small Images stacked vertically on right */}
+                    <div className="hidden md:flex flex-col gap-4 h-full">
+                        <div className="relative group overflow-hidden h-1/2 rounded-[1.5rem]">
+                            <img
+                                src={galleryImages[1]}
+                                alt={`${name} scenery`}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            />
+                        </div>
+                        <div className="relative group overflow-hidden h-1/2 rounded-[1.5rem]">
+                            <img
+                                src={galleryImages[2]}
+                                alt={`${name} coast`}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* Main Content Body */}
-            <div className="container mx-auto px-6 md:px-12 py-16 max-w-7xl">
+            <div className="container mx-auto px-6 md:px-12 py-12 max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
                     
                     {/* Left Column (2 Cols) */}
-                    <div className="lg:col-span-2 space-y-16">
-                        {/* Historical Context */}
+                    <div className="lg:col-span-2 space-y-12">
+                        
+                        {/* About this Destination / Historical Context */}
                         <section className="glass-card p-8 md:p-10 border border-[#F3E8D0]/15 bg-[#071A2B]/70">
                             <h2 className="text-3xl font-black font-heading text-white mb-6 flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-2xl bg-[#087EA4]/20 border border-[#087EA4]/40 flex items-center justify-center text-[#087EA4]">
@@ -131,7 +158,7 @@ const RegionDetails = () => {
                             </p>
                         </section>
 
-                        {/* Main Attractions */}
+                        {/* Top Attractions */}
                         <section>
                             <h2 className="text-3xl font-black font-heading text-white mb-8 flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-2xl bg-[#D8A84E]/20 border border-[#D8A84E]/40 flex items-center justify-center text-[#D8A84E]">
@@ -156,7 +183,7 @@ const RegionDetails = () => {
                             </div>
                         </section>
 
-                        {/* Culinary Specialties */}
+                        {/* Culinary & Local Cuisine */}
                         <section className="glass-card p-8 md:p-10 border border-[#F3E8D0]/15 bg-[#071A2B]/70">
                             <h2 className="text-3xl font-black font-heading text-white mb-6 flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-2xl bg-[#1EA84C]/20 border border-[#1EA84C]/40 flex items-center justify-center text-[#1EA84C]">
@@ -175,6 +202,38 @@ const RegionDetails = () => {
                                 ))}
                             </div>
                         </section>
+
+                        {/* Best Time to Visit & Travel Tips */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="glass-card p-8 border border-[#F3E8D0]/15 bg-[#071A2B]/70">
+                                <div className="w-12 h-12 rounded-2xl bg-[#D8A84E]/20 border border-[#D8A84E]/40 flex items-center justify-center text-[#D8A84E] mb-5">
+                                    <Sun size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white mb-3">
+                                    {language === 'so' ? 'Wakhtiga Ugu Fiican Bisaylka' : 'Best Time to Visit'}
+                                </h3>
+                                <p className="text-[#F3E8D0]/80 text-sm leading-relaxed">
+                                    {language === 'so'
+                                        ? 'Billeaha Oktoobar ilaa Abriil waxay bixiyaan jawi kuleyl ah oo dhexdhexaad ah iyo mowjado badda oo degan.'
+                                        : 'October to April offers pleasant tropical breezes, clear coastal waters, and optimal conditions for exploration.'}
+                                </p>
+                            </div>
+
+                            <div className="glass-card p-8 border border-[#F3E8D0]/15 bg-[#071A2B]/70">
+                                <div className="w-12 h-12 rounded-2xl bg-[#087EA4]/20 border border-[#087EA4]/40 flex items-center justify-center text-[#087EA4] mb-5">
+                                    <ShieldCheck size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white mb-3">
+                                    {language === 'so' ? 'Talooyinka Safarka' : 'Traveler Tips'}
+                                </h3>
+                                <p className="text-[#F3E8D0]/80 text-sm leading-relaxed">
+                                    {language === 'so'
+                                        ? 'Khaarajka lacagta: Shilling Somali ama USD cash. Xiriir la sameey hagayaal maxalli ah si aad u hesho waayo-aragnimo buuxda.'
+                                        : 'Currency: US Dollars & Somali Shillings. Engage local certified guides for authentic, safe cultural immersion.'}
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
 
                     {/* Right Column (Sidebar) */}
@@ -222,7 +281,7 @@ const RegionDetails = () => {
                             </p>
                             <button 
                                 onClick={() => navigate('/quiz')}
-                                className="btn-gold w-full py-4 rounded-2xl flex items-center justify-center gap-2 shadow-xl"
+                                className="btn-gold w-full py-4 rounded-2xl flex items-center justify-center gap-2 shadow-xl font-bold"
                             >
                                 <Compass size={18} />
                                 <span>{t('test_btn')}</span>
@@ -230,10 +289,38 @@ const RegionDetails = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Bottom CTA Banner */}
+                <div className="mt-20 p-10 md:p-14 rounded-[3rem] bg-gradient-to-r from-[#071A2B] via-[#087EA4] to-[#071A2B] border border-[#D8A84E]/30 text-center relative overflow-hidden shadow-2xl">
+                    <div className="absolute -left-10 -bottom-10 w-48 h-48 bg-[#D8A84E]/10 rounded-full blur-3xl pointer-events-none" />
+                    <div className="relative z-10 max-w-2xl mx-auto space-y-6">
+                        <h2 className="text-3xl md:text-5xl font-black font-heading text-white tracking-tight">
+                            {language === 'so' 
+                                ? `Diyaar ma u tahay in aad baarto ${name}?` 
+                                : `Ready to Explore ${name}?`}
+                        </h2>
+                        <p className="text-[#F3E8D0]/80 text-base md:text-lg font-light">
+                            {language === 'so'
+                                ? 'Kala duwanaanshaha, taariikhda iyo xeebaha quruxda badan ee Soomaaliya ayaad hadda ka bilaabi kartaa.'
+                                : 'Start your journey today and experience the breathtaking coastal heritage, culture, and hospitality.'}
+                        </p>
+                        <div className="flex justify-center pt-2">
+                            <button
+                                onClick={() => navigate('/explore')}
+                                className="btn-gold px-10 py-4 text-base font-bold rounded-2xl flex items-center gap-3 shadow-2xl"
+                            >
+                                <span>{language === 'so' ? 'Bilaab sahaminta' : 'Start Exploring'}</span>
+                                <ArrowRight size={20} />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </motion.div>
     );
 };
 
 export default RegionDetails;
+
 
