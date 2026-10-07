@@ -7,7 +7,7 @@
     "title_so": "Xeebta Liido & Quruxda Badweynta Hindiya",
     "desc_en": "Experience pristine white sand beaches, turquoise waves, and vibrant sunset dining along Mogadishu's coastline.",
     "desc_so": "Khibrad u yeelo xeebaha ciidda cad, mawjadaha buluugga ah, iyo cashada fiidkii ee xeebta Muqdisho.",
-    "image": "/images/mogadishu.png",
+    "image": "/images/lido_beach_user.jpg",
     "regionId": "banadir"
   },
   {
@@ -51,7 +51,7 @@
     "title_so": "Ciyaarta Dhaanto & Habeennada Gabayada",
     "desc_en": "Immerse yourself in traditional rhythmic Dhaanto dance performances and soul-stirring Somali poetry recitations.",
     "desc_so": "Daawo ciyaaraha dhaantada iyo habeenada gabayada hiddaha iyo dhaqanka Soomaaliyeed.",
-    "image": "/images/culture.png",
+    "image": "/images/dhaanto_user.jpg",
     "regionId": "bari"
   },
   {
