@@ -181,7 +181,9 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs uppercase text-[#F3E8D0]/50 font-bold tracking-wider">Email Us</p>
-                                    <p className="text-white font-semibold text-sm">info@somexplore.so</p>
+                                    <a href="mailto:infosomexplore1@gmail.com" className="text-white font-semibold text-sm hover:text-[#087EA4] transition-colors">
+                                        infosomexplore1@gmail.com
+                                    </a>
                                 </div>
                             </div>
 
