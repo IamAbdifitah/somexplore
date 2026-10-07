@@ -29,8 +29,8 @@
     "title_so": "Koraanka Buurta Daallo & Cal Madow",
     "desc_en": "Trek through misty pine forests, rare frankincense groves, and dramatic clifftop panoramic viewpoints.",
     "desc_so": "Ku socdaal kaymaha buuraha Daallo, geedaha beeyada, iyo muuqaallada caabuqa leh ee Cal Madow.",
-    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
-    "regionId-[#0]": "sanaag"
+    "image": "/images/Sanaag.jpg",
+    "regionId": "sanaag"
   },
   {
     "id": "exp-4",
@@ -40,18 +40,18 @@
     "title_so": "Udugga & Cuntada Dhaqanka Soomaaliyeed",
     "desc_en": "Savor authentic Bariis Isku-karis, Suqaar, Camel Milk tea, and fresh seafood infused with aromatic spices.",
     "desc_so": "Dhadhami bariiska isku-kariska ah, suqaarka, shaaha caanaha geela, iyo kalluunka cusub.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/banaadir.jpg",
     "regionId": "banadir"
   },
   {
     "id": "exp-5",
     "category": "Culture & Tradition",
-    "icon": "🕌",
+    "icon": "🎭",
     "title_en": "Dhaanto Folk Dance & Poetry Nights",
     "title_so": "Ciyaarta Dhaanto & Habeennada Gabayada",
     "desc_en": "Immerse yourself in traditional rhythmic Dhaanto dance performances and soul-stirring Somali poetry recitations.",
     "desc_so": "Daawo ciyaaraha dhaantada iyo habeenada gabayada hiddaha iyo dhaqanka Soomaaliyeed.",
-    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/culture.png",
     "regionId": "bari"
   },
   {
@@ -62,7 +62,8 @@
     "title_so": "Sawirada Dhismaha Qadiimiga ah ee Xeebaha",
     "desc_en": "Capture historic Italian-Somali archways, coastal lighthouses, and bustling morning fish markets.",
     "desc_so": "Sawir dhismayaasha qadiimiga ah, laydhka xeebaha, iyo suuqyada kalluunka ee waajibaadka subaxnimo.",
-    "image": "/images/kismayo.png",
+    "image": "/images/bosaso.png",
     "regionId": "jubbada-hoose"
   }
 ]
+
